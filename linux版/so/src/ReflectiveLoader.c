@@ -986,3 +986,7 @@ Elf64_Ehdr* load_file_debug_mode(char *debugfile)
 }
 
 #endif
+void __attribute__ ((constructor)) SoMain(){
+	printf("somain\n");
+}
+
